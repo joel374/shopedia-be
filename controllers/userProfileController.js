@@ -1,9 +1,9 @@
 const db = require("../models")
-const { Op } = require("sequelize")
+// const { Op } = require("sequelize")
 const bcrypt = require("bcrypt")
-const fs = require("fs")
-const { async } = require("q")
-const { profile } = require("console")
+// const fs = require("fs")
+// const { async } = require("q")
+// const { profile } = require("console")
 
 const User = db.User
 

@@ -3,11 +3,11 @@ const config = require('./config.json')
 
 const pool = mysql.createPool({
     connectionLimit: 100,
-    host: config.development.host,
-    user: config.development.username,
-    password: config.development.password,
-    database: config.development.database,
-    port: '3306'
+    host: process.env.DB_HOST,
+    user: process.env.DB_USERNAME,
+    password: process.env.DB_PASSWORD,
+    database: process.env.DB_NAME,
+    port: process.env.DB_PORT,
 });
 
 module.exports = pool;
